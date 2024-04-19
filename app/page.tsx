@@ -1,7 +1,13 @@
 import { Page } from "@/types";
+import ThemeSwitcher from "./_components/theme";
 
 const HomePage: Page = () => {
-  return <div className="dark:text-white">HomePage</div>;
+  return (
+    <div>
+      <div className="dark:text-white">HomePage</div>
+      <ThemeSwitcher />
+    </div>
+  );
 };
 
 export default HomePage;
