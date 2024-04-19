@@ -8,7 +8,7 @@ const ThemeSwitcher = () => {
   return (
     <div>
       <button onClick={() => setTheme(isDarkMode ? "light" : "dark")}>
-        {isDarkMode ? "dark" : "light"}
+        switch
       </button>
     </div>
   );

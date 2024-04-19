@@ -14,11 +14,11 @@ type Props = {
 
 const ThemeProvider = ({ children }: Props) => {
   const [theme, setTheme] = useState<Theme>(() => {
-    let storedTheme;
+    let storedTheme: Theme = "light";
     if (typeof window !== "undefined") {
-      storedTheme = window.localStorage.getItem("theme");
+      storedTheme = window.localStorage.getItem("theme") as Theme;
     }
-    return storedTheme ? (storedTheme as Theme) : "light";
+    return storedTheme;
   });
 
   const handleTheme = (theme: Theme) => {
@@ -27,6 +27,7 @@ const ThemeProvider = ({ children }: Props) => {
 
   useEffect(() => {
     localStorage.setItem("theme", theme);
+    console.log(theme);
   }, [theme]);
 
   return (
@@ -46,7 +47,7 @@ export const useTheme = () => {
   }
 
   const isDarkMode = context.theme === "dark";
-  
+
   return {
     isDarkMode,
     setTheme: context.handleTheme,
