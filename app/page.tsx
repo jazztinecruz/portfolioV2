@@ -4,7 +4,7 @@ import ThemeSwitcher from "./_components/theme";
 const HomePage: Page = () => {
   return (
     <div>
-      <div className="dark:text-white">HomePage</div>
+      <div>HomePage</div>
       <ThemeSwitcher />
     </div>
   );
