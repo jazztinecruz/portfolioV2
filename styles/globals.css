@@ -13,8 +13,4 @@
   .secondary {
     @apply bg-black text-white dark:bg-white dark:text-black;
   }
-
-  .tertiary {
-    @apply text-gray-600 dark:text-gray-400;
-  }
 }

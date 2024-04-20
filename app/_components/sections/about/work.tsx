@@ -11,7 +11,7 @@ const WorkExperience = () => {
     <div className="grid md:grid-cols-2 items-center gap-8 mt-12">
       <div className="flex flex-col gap-4 items-start">
         <Title>Work Experience</Title>
-        <p className={`${isDarkMode && "tertiary"}`}>
+        <p className="opacity-75">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
           eaque similique delectus, expedita sapiente ab maxime soluta
           praesentium nostrum a voluptatem tenetur consectetur laudantium
@@ -29,20 +29,12 @@ const WorkExperience = () => {
             />
 
             <div className="flex flex-col ml-8">
-              <h3 className="font-semibold">{work.company}</h3>
-              <div className="text-sm flex items-center gap-2">
+              <h3 className="font-medium">{work.company}</h3>
+              <div className="text-sm flex items-center font-light opacity-75 gap-2">
                 <p>{work.year}</p>
-                <div
-                  className={`${
-                    isDarkMode ? "secondary" : "primary"
-                  } w-1 h-1 rounded-full`}
-                />
+                <div className={`w-1 h-1 rounded-full`} />
                 <p>{work.months}</p>
-                <div
-                  className={`${
-                    isDarkMode ? "secondary" : "primary"
-                  } w-1 h-1 rounded-full`}
-                />
+                <div className={`w-1 h-1 rounded-full`} />
                 <p>{work.type[0].toUpperCase() + work.type.slice(1)}</p>
               </div>
             </div>

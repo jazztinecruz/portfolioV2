@@ -15,7 +15,7 @@ const About = () => {
         growth and continuous improvement.
       </p>
 
-      <div className="space-y-20 lg:space-y-32">
+      <div className="space-y-20">
         <Character />
         <WorkExperience />
         <EducationalBackground />
