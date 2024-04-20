@@ -27,7 +27,7 @@ const ThemeProvider = ({ children }: Props) => {
 
   useEffect(() => {
     localStorage.setItem("theme", theme);
-  }, [theme, window.localStorage]);
+  }, [theme, typeof window !== "undefined" && window.localStorage]);
 
   return (
     <ThemeContext.Provider value={{ theme, handleTheme }}>

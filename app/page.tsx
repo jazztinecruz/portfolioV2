@@ -1,11 +1,10 @@
 import { Page } from "@/types";
-import ThemeSwitcher from "./_components/theme";
+import Hero from "./_components/hero";
 
 const HomePage: Page = () => {
   return (
     <div>
-      <div>HomePage</div>
-      <ThemeSwitcher />
+      <Hero />
     </div>
   );
 };

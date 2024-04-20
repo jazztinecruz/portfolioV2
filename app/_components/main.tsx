@@ -11,12 +11,9 @@ const Main = ({ children }: Props) => {
   const { isDarkMode } = useTheme();
 
   return (
-    <div
-      className={`min-h-screen ${
-        isDarkMode ? "bg-black text-white" : "bg-white text-black"
-      }`}>
-      {children}
-    </div>
+    <main className={`min-h-screen ${isDarkMode && "primary"}`}>
+      <div className="max-w-7xl mx-auto w-full grid gap-8 p-6">{children}</div>
+    </main>
   );
 };
 
