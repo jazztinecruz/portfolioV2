@@ -7,10 +7,18 @@
 }
 
 @layer base {
-  .primary {
-    @apply bg-white text-black dark:bg-black dark:text-white;
+  .dark {
+    @apply bg-black text-white;
   }
-  .secondary {
-    @apply bg-black text-white dark:bg-white dark:text-black;
+  .light {
+    @apply bg-slate-200 text-black;
+  }
+
+  .border-dark {
+    @apply border-black ;
+  }
+
+  .border-light {
+    @apply border-slate-200 border-opacity-50;
   }
 }

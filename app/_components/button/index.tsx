@@ -14,7 +14,7 @@ const Button = ({ children, onClick }: Props) => {
     <button
       onClick={onClick}
       className={`${
-        isDarkMode ? "secondary" : "primary"
+        isDarkMode ? "light" : "dark"
       } px-4 py-2 rounded-md font-semibold`}>
       {children}
     </button>

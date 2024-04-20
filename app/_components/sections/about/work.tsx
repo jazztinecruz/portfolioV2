@@ -21,10 +21,14 @@ const WorkExperience = () => {
 
       <div className="flex flex-col">
         {works.map((work) => (
-          <div key={work.months} className="flex border-l py-2 relative">
+          <div
+            key={work.months}
+            className={`flex border-l py-2 relative ${
+              isDarkMode ? "border-light" : "border-dark"
+            }`}>
             <div
               className={`w-3 h-3 rounded-full absolute -start-1.5 mt-1.5 ${
-                isDarkMode ? "secondary" : "primary"
+                isDarkMode ? "light" : "dark"
               }`}
             />
 
@@ -32,9 +36,17 @@ const WorkExperience = () => {
               <h3 className="font-medium">{work.company}</h3>
               <div className="text-sm flex items-center font-light opacity-75 gap-2">
                 <p>{work.year}</p>
-                <div className={`w-1 h-1 rounded-full`} />
+                <div
+                  className={`w-1 h-1 rounded-full ${
+                    isDarkMode ? "light" : "dark"
+                  }`}
+                />
                 <p>{work.months}</p>
-                <div className={`w-1 h-1 rounded-full`} />
+                <div
+                  className={`w-1 h-1 rounded-full ${
+                    isDarkMode ? "light" : "dark"
+                  }`}
+                />
                 <p>{work.type[0].toUpperCase() + work.type.slice(1)}</p>
               </div>
             </div>
