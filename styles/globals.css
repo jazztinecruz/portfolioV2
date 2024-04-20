@@ -13,6 +13,9 @@
   .secondary {
     @apply dark:bg-slate-200 dark:text-black bg-black text-white;
   }
+  .tertiary {
+    @apply text-gray-800 dark:text-gray-300;
+  }
   .primary-border {
     @apply border-black dark:border-slate-200 dark:border-opacity-50;
   }

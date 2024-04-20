@@ -16,7 +16,7 @@ const Character = () => {
 
       <div className="flex flex-col gap-4 items-start">
         <Title>Character</Title>
-        <p className="opacity-75">
+        <p className="tertiary">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
           eaque similique delectus, expedita sapiente ab maxime soluta
           praesentium nostrum a voluptatem tenetur consectetur laudantium

@@ -7,7 +7,7 @@ const EducationalBackground = () => {
     <div className="grid md:grid-cols-2 items-center gap-8 mt-12">
       <div className="flex flex-col gap-4 items-start">
         <Title>Educational Background</Title>
-        <p className="opacity-75">
+        <p className="tertiary">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
           eaque similique delectus, expedita sapiente ab maxime soluta
           praesentium nostrum a voluptatem tenetur consectetur laudantium
@@ -23,7 +23,7 @@ const EducationalBackground = () => {
               <AcademicCapIcon className="w-5 h-5" />
               <div className="flex flex-col">
                 <p className="lg:text-lg">{item.label}</p>
-                <p className="text-sm opacity-75 font-light">{item.sublabel}</p>
+                <p className="text-sm tertiary font-light">{item.sublabel}</p>
               </div>
             </div>
           ))}
@@ -35,7 +35,7 @@ const EducationalBackground = () => {
               <StarIcon className="w-5 h-5" />
               <div className="flex flex-col">
                 <p className="lg:text-lg">{item.label}</p>
-                <p className="text-sm opacity-75 font-light">{item.sublabel}</p>
+                <p className="text-sm tertiary font-light">{item.sublabel}</p>
               </div>
             </div>
           ))}
