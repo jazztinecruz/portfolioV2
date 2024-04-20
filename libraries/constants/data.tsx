@@ -1,4 +1,4 @@
-import type { Education, MenuItem } from "@/libraries/types";
+import type { Education, MenuItem, Work } from "@/libraries/types";
 
 export const menus: MenuItem[] = [
   { label: "Home", id: "#home" },
@@ -39,5 +39,43 @@ export const education: Education[] = [
     label: "Best Software Application Project",
     sublabel: "Philippine Christian University",
     type: "award",
+  },
+];
+
+export const works: Work[] = [
+  {
+    company: "HireTalk Inc.",
+    year: "Oct 2022 - Jan 2023",
+    months: "4 mos",
+    type: "internship",
+    isCurrent: false,
+  },
+  {
+    company: "Checkpoint Labs",
+    year: "Apr 2023 - Nov 2023",
+    months: "6 mos",
+    type: "part-time",
+    isCurrent: false,
+  },
+  {
+    company: "Ghaleb Alaskari General Trading LLC",
+    year: "July 2023 - July 2023 ",
+    months: "1 mo",
+    type: "contractual",
+    isCurrent: false,
+  },
+  {
+    company: "HireTalk Inc.",
+    year: "Jan 2023 - Present",
+    months: "1 yr and 4 mos",
+    type: "full-time",
+    isCurrent: true,
+  },
+  {
+    company: "Freelance",
+    year: "Oct 2021 - Present",
+    months: "2 yrs and 7 mos",
+    type: "freelance",
+    isCurrent: true,
   },
 ];
