@@ -14,7 +14,7 @@ const Character = () => {
           <div
             key={character}
             className={`border ${
-              isDarkMode ? "border-gray-600 tertiary" : "border-black"
+              isDarkMode ? "border-gray-600" : "border-black"
             } rounded-md w-fit px-4 py-2 text-sm md:text-md`}>
             {character}
           </div>

@@ -8,3 +8,8 @@ export type MenuItem = {
   label: string;
   id: string;
 };
+export type Education = {
+  label: string;
+  sublabel: string;
+  type: "degree" | "award";
+};

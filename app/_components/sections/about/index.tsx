@@ -1,5 +1,6 @@
 import SectionTitle from "../../section-title";
 import Character from "./character";
+import EducationalBackground from "./educational";
 
 const About = () => {
   return (
@@ -17,7 +18,7 @@ const About = () => {
 
       <div className="space-y-32">
         <Character />
-        <div>dd</div>
+        <EducationalBackground />
       </div>
     </section>
   );
