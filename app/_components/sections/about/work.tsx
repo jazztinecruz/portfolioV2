@@ -19,7 +19,7 @@ const WorkExperience = () => {
           <div
             key={work.months}
             className="flex border-l py-2 relative primary-border">
-            <div className="w-3 h-3 rounded-full absolute -start-1.5 mt-1.5 secondary" />
+            <div className={`w-3 h-3 rounded-full absolute -start-1.5 mt-1.5 secondary ${work.isCurrent && "bg-green-500 dark:bg-green-500"}`} />
 
             <div className="flex flex-col ml-8">
               <h3 className="font-medium">{work.company}</h3>
