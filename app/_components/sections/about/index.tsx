@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="h-screen flex flex-col space-y-8 items-center">
+      className="flex flex-col space-y-8 items-center">
       <SectionTitle>Get to Know ME</SectionTitle>
       <p className="max-w-4xl text-center">
         A dedicated and a fast-learner Frontend Software Engineer and a UI
@@ -16,7 +16,7 @@ const About = () => {
         growth and continuous improvement.
       </p>
 
-      <div className="space-y-32">
+      <div className="space-y-20 lg:space-y-32">
         <Character />
         <EducationalBackground />
       </div>
