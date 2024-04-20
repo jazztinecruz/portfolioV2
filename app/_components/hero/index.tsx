@@ -4,12 +4,12 @@ import Navbar from "./_components/navbar";
 import ThemeSwitcher from "./_components/theme";
 import Button from "../button";
 
-import { Page } from "@/types";
+import type { Page } from "@/libraries/types";
 import { roboto, satisfy } from "@/app/layout";
 
 const Hero: Page = () => {
   return (
-    <section className="space-y-4 h-screen">
+    <section id="home" className="space-y-4 h-screen">
       <header className="flex items-center justify-between">
         <Navbar />
         <div className="flex items-center gap-4 ml-auto">

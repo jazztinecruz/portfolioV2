@@ -1,4 +1,4 @@
-import menus from "@/constants/menus";
+import { menus } from "@/libraries/constants/data";
 import Link from "next/link";
 
 const Navbar = () => {

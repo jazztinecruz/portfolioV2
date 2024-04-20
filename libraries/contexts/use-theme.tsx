@@ -1,6 +1,6 @@
 "use client";
 
-import { Children, Theme } from "@/types";
+import type { Children, Theme } from "@/libraries/types";
 import { createContext, useContext, useEffect, useState } from "react";
 
 const ThemeContext = createContext<{
@@ -40,13 +40,10 @@ export default ThemeProvider;
 
 export const useTheme = () => {
   const context = useContext(ThemeContext);
-
   if (!context) {
     throw new Error("useTheme must be used within a ThemeProvider");
   }
-
   const isDarkMode = context.theme === "dark";
-
   return {
     isDarkMode,
     setTheme: context.handleTheme,

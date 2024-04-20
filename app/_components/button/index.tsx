@@ -1,7 +1,7 @@
 "use client";
 
-import { useTheme } from "@/contexts/use-theme";
-import { Children } from "@/types";
+import { useTheme } from "@/libraries/contexts/use-theme";
+import type { Children } from "@/libraries/types";
 
 type Props = {
   onClick: () => void;

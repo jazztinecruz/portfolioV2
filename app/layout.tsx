@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
+import type { Children } from "@/libraries/types";
 import { Inter, Satisfy, Roboto_Mono } from "next/font/google";
-import { Children } from "@/types";
 import "@/styles/globals.css";
-import ThemeProvider from "@/contexts/use-theme";
+import ThemeProvider from "@/libraries/contexts/use-theme";
 import Main from "./_components/main";
 
 const inter = Inter({ subsets: ["latin"] });
