@@ -12,7 +12,7 @@ const Main = ({ children }: Props) => {
 
   return (
     <main className={`min-h-screen ${isDarkMode && "primary"}`}>
-      <div className="max-w-7xl mx-auto w-full grid gap-8 p-6">{children}</div>
+      <div className="max-w-6xl mx-auto w-full grid gap-8 p-6">{children}</div>
     </main>
   );
 };

@@ -2,7 +2,7 @@
 
 import Navbar from "./_components/navbar";
 import ThemeSwitcher from "./_components/theme";
-import Button from "../button";
+import Button from "../../button";
 
 import type { Page } from "@/libraries/types";
 import { roboto, satisfy } from "@/app/layout";
