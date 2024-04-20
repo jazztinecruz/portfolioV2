@@ -5,7 +5,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 
 const ThemeContext = createContext<{
   theme: Theme;
-  handleTheme: (theme: Theme) => void;
+  toggleTheme: () => void;
 } | null>(null);
 
 type Props = {
@@ -14,15 +14,15 @@ type Props = {
 
 const ThemeProvider = ({ children }: Props) => {
   const [theme, setTheme] = useState<Theme>(() => {
-    let storedTheme: Theme = "light";
+    let storedTheme: Theme = "dark";
     if (typeof window !== "undefined") {
       storedTheme = window.localStorage.getItem("theme") as Theme;
     }
     return storedTheme;
   });
 
-  const handleTheme = (theme: Theme) => {
-    setTheme(theme);
+  const toggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
   };
 
   useEffect(() => {
@@ -30,8 +30,8 @@ const ThemeProvider = ({ children }: Props) => {
   }, [theme, window.localStorage]);
 
   return (
-    <ThemeContext.Provider value={{ theme, handleTheme }}>
-      {children}
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      <div className={theme === "dark" ? "light" : "dark"}>{children}</div>
     </ThemeContext.Provider>
   );
 };
@@ -45,7 +45,7 @@ export const useTheme = () => {
   }
   const isDarkMode = context.theme === "dark";
   return {
+    ...context,
     isDarkMode,
-    setTheme: context.handleTheme,
   };
 };

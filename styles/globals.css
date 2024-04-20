@@ -7,18 +7,19 @@
 }
 
 @layer base {
-  .dark {
-    @apply bg-black text-white;
+  .primary {
+    @apply bg-slate-200 text-black dark:bg-black dark:text-white;
   }
-  .light {
-    @apply bg-slate-200 text-black;
+  .secondary {
+    @apply dark:bg-slate-200 dark:text-black bg-black text-white;
   }
+  .primary-border {
+    @apply border-black dark:border-slate-200 dark:border-opacity-50;
+  }
+}
 
-  .border-dark {
-    @apply border-black ;
-  }
-
-  .border-light {
-    @apply border-slate-200 border-opacity-50;
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md font-semibold secondary;
   }
 }

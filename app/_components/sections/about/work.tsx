@@ -1,12 +1,7 @@
-"use client";
-
-import { useTheme } from "@/libraries/contexts/use-theme";
 import { Title } from "../../titles";
 import { works } from "@/libraries/constants/data";
 
 const WorkExperience = () => {
-  const { isDarkMode } = useTheme();
-
   return (
     <div className="grid md:grid-cols-2 items-center gap-8 mt-12">
       <div className="flex flex-col gap-4 items-start">
@@ -21,32 +16,16 @@ const WorkExperience = () => {
 
       <div className="flex flex-col">
         {works.map((work) => (
-          <div
-            key={work.months}
-            className={`flex border-l py-2 relative ${
-              isDarkMode ? "border-light" : "border-dark"
-            }`}>
-            <div
-              className={`w-3 h-3 rounded-full absolute -start-1.5 mt-1.5 ${
-                isDarkMode ? "light" : "dark"
-              }`}
-            />
+          <div key={work.months} className="flex border-l py-2 relative primary-border">
+            <div className="w-3 h-3 rounded-full absolute -start-1.5 mt-1.5 secondary" />
 
             <div className="flex flex-col ml-8">
               <h3 className="font-medium">{work.company}</h3>
               <div className="text-sm flex items-center font-light opacity-75 gap-2">
                 <p>{work.year}</p>
-                <div
-                  className={`w-1 h-1 rounded-full ${
-                    isDarkMode ? "light" : "dark"
-                  }`}
-                />
+                <div className="w-1 h-1 rounded-full secondary" />
                 <p>{work.months}</p>
-                <div
-                  className={`w-1 h-1 rounded-full ${
-                    isDarkMode ? "light" : "dark"
-                  }`}
-                />
+                <div className="w-1 h-1 rounded-full secondary" />
                 <p>{work.type[0].toUpperCase() + work.type.slice(1)}</p>
               </div>
             </div>

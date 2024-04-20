@@ -1,8 +1,5 @@
-"use client";
-
 import Navbar from "./navbar";
 import ThemeSwitcher from "./theme";
-import Button from "../../button";
 
 import type { Page } from "@/libraries/types";
 import { roboto, satisfy } from "@/app/layout";
@@ -14,7 +11,7 @@ const Hero: Page = () => {
         <Navbar />
         <div className="flex items-center gap-4 ml-auto">
           <ThemeSwitcher />
-          <Button onClick={() => console.log("email me")}>Email ME</Button>
+          <button className="btn">Email ME</button>
         </div>
       </header>
 

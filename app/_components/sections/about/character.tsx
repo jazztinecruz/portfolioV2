@@ -1,21 +1,14 @@
-"use client";
-
 import { charateristics } from "@/libraries/constants/data";
 import { Title } from "../../titles";
-import { useTheme } from "@/libraries/contexts/use-theme";
 
 const Character = () => {
-  const { isDarkMode } = useTheme();
-
   return (
     <div className="grid md:grid-cols-2 items-center gap-8 mt-12">
       <div className="flex flex-wrap gap-3">
         {charateristics.map((character) => (
           <div
             key={character}
-            className={`border ${
-              isDarkMode ? "border-light" : "border-dark"
-            } rounded-md w-fit px-4 py-2 text-sm md:text-md`}>
+            className="border primary-border rounded-md w-fit px-4 py-2 text-sm md:text-md">
             {character}
           </div>
         ))}
