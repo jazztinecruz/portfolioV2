@@ -1,4 +1,4 @@
-import Title from "../../title";
+import { Title } from "../../titles";
 import { education } from "@/libraries/constants/data";
 import { AcademicCapIcon, StarIcon } from "@heroicons/react/24/solid";
 

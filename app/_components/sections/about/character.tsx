@@ -1,5 +1,5 @@
 import { charateristics } from "@/libraries/constants/data";
-import Title from "../../title";
+import { Title } from "../../titles";
 
 const Character = () => {
   return (

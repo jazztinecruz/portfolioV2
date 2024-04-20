@@ -1,7 +1,7 @@
 "use client";
 
-import Navbar from "./_components/navbar";
-import ThemeSwitcher from "./_components/theme";
+import Navbar from "./navbar";
+import ThemeSwitcher from "./theme";
 import Button from "../../button";
 
 import type { Page } from "@/libraries/types";

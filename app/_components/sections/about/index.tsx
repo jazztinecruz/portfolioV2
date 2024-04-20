@@ -1,4 +1,4 @@
-import SectionTitle from "../../section-title";
+import { SectionTitle } from "../../titles";
 import Character from "./character";
 import EducationalBackground from "./educational";
 import WorkExperience from "./work";

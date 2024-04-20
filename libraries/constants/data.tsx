@@ -36,8 +36,8 @@ export const education: Education[] = [
     type: "award",
   },
   {
-    label: "Best Software Application Project",
-    sublabel: "Philippine Christian University",
+    label: "Best Thesis Software Application Project",
+    sublabel: "Codery - A Web-based Platform for Freelancers",
     type: "award",
   },
 ];

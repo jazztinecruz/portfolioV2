@@ -1,7 +1,7 @@
 "use client";
 
 import { useTheme } from "@/libraries/contexts/use-theme";
-import Title from "../../title";
+import { Title } from "../../titles";
 import { works } from "@/libraries/constants/data";
 
 const WorkExperience = () => {
