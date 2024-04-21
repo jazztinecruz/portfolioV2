@@ -1,7 +1,6 @@
 import { techStacks } from "@/libraries/constants/data";
-import Image from "next/image";
-import React from "react";
 import { SectionTitle } from "../../titles";
+import Image from "next/image";
 
 const TechStacks = () => {
   return (

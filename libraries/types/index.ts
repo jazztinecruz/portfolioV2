@@ -30,3 +30,7 @@ export type Project = {
   url?: string;
   github: string;
 };
+export type Social = {
+  link: string;
+  src: string;
+};

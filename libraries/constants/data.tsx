@@ -2,6 +2,7 @@ import type {
   Education,
   MenuItem,
   Project,
+  Social,
   TechStack,
   Work,
 } from "@/libraries/types";
@@ -11,7 +12,7 @@ export const menus: MenuItem[] = [
   { label: "About ME", id: "#about" },
   { label: "Tech Stacks", id: "#tech-stacks" },
   { label: "Projects", id: "#projects" },
-  { label: "Contact ME", id: "#contacts" },
+  { label: "Contact ME", id: "#socials" },
 ];
 
 export const charateristics: string[] = [
@@ -149,7 +150,7 @@ export const projects: Project[] = [
   },
 ];
 
-export const contacts = [
+export const socials: Social[] = [
   { link: "www.linkedin.com/in/jazztinecruz", src: "/logos/linkedin.png" },
   { link: "me@jazztinecruz.com", src: "/logos/gmail.png" },
 ];

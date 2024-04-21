@@ -1,11 +1,11 @@
-import { contacts } from "@/libraries/constants/data";
+import { socials } from "@/libraries/constants/data";
 import Image from "next/image";
 import Link from "next/link";
 
-const Contacts = () => {
+const Socials = () => {
   return (
-    <div className="flex items-center gap-3">
-      {contacts.map((contact) => (
+    <section id="socials" className="flex items-center gap-3">
+      {socials.map((contact) => (
         <Link key={contact.src} href={contact.link}>
           <div className="relative w-fit">
             <Image
@@ -18,8 +18,8 @@ const Contacts = () => {
           </div>
         </Link>
       ))}
-    </div>
+    </section>
   );
 };
 
-export default Contacts;
+export default Socials;

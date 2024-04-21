@@ -2,10 +2,10 @@
 
 import { projects } from "@/libraries/constants/data";
 import { SectionTitle } from "../../titles";
-import Link from "next/link";
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
-import Image from "next/image";
 import { useTheme } from "@/libraries/contexts/use-theme";
+import Link from "next/link";
+import Image from "next/image";
 
 const Projects = () => {
   const { isDarkMode } = useTheme();

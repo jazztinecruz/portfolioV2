@@ -1,8 +1,7 @@
-import Navbar from "./navbar";
-import ThemeSwitcher from "./theme";
-
 import type { Page } from "@/libraries/types";
 import { roboto, satisfy } from "@/app/layout";
+import Navbar from "./navbar";
+import ThemeSwitcher from "./theme";
 
 const Hero: Page = () => {
   return (
