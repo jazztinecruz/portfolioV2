@@ -1,4 +1,10 @@
-import type { Education, MenuItem, TechStack, Work } from "@/libraries/types";
+import type {
+  Education,
+  MenuItem,
+  Project,
+  TechStack,
+  Work,
+} from "@/libraries/types";
 
 export const menus: MenuItem[] = [
   { label: "Home", id: "#home" },
@@ -96,4 +102,48 @@ export const techStacks: TechStack[] = [
   { label: "GraphQL", src: "/logos/graphql.png" },
   { label: "Figma", src: "/logos/figma.webp" },
   { label: "Git", src: "/logos/git.png" },
+];
+
+export const projects: Project[] = [
+  {
+    title: "Lorem Ipsum",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc.",
+    url: "",
+    github: "",
+  },
+  {
+    title: "Codery",
+    description:
+      "A web-based platform for freelancers to find jobs and clients.",
+    github: "",
+  },
+  {
+    title: "Lorem Ipsum Sit Amet",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc.",
+    url: "",
+    github: "",
+  },
+  {
+    title: "Lorem Ipsum Sit Amet",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc.",
+    url: "",
+    github: "",
+  },
+  {
+    title: "Lorem Ipsum Sit Amet",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc.",
+    url: "",
+    github: "",
+  },
+  {
+    title: "Lorem Ipsum Sit Amet",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc.",
+    url: "",
+    github: "",
+  },
 ];

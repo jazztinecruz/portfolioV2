@@ -24,3 +24,9 @@ export type TechStack = {
   label: string;
   src: string;
 };
+export type Project = {
+  title: string;
+  description: string;
+  url?: string;
+  github: string;
+};
