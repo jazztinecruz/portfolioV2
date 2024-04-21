@@ -11,6 +11,7 @@ export const menus: MenuItem[] = [
   { label: "About ME", id: "#about" },
   { label: "Tech Stacks", id: "#tech-stacks" },
   { label: "Projects", id: "#projects" },
+  { label: "Contact ME", id: "#contacts" },
 ];
 
 export const charateristics: string[] = [
@@ -146,4 +147,9 @@ export const projects: Project[] = [
     url: "",
     github: "",
   },
+];
+
+export const contacts = [
+  { link: "www.linkedin.com/in/jazztinecruz", src: "/logos/linkedin.png" },
+  { link: "me@jazztinecruz.com", src: "/logos/gmail.png" },
 ];
