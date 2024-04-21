@@ -25,7 +25,7 @@ const RootLayout = ({ children }: Props) => {
         <ThemeProvider>
           <main className="primary relative">
             <Radials />
-            <div className="bg-white/10 backdrop-blur-xl h-full aboslute inset-0">
+            <div className="bg-opacity backdrop-blur-xl h-full">
               <div className="max-w-6xl mx-auto w-full grid gap-8 p-6">
                 {children}
               </div>

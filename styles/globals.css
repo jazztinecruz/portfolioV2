@@ -19,6 +19,9 @@
   .primary-border {
     @apply border-black dark:border-slate-200 dark:border-opacity-50;
   }
+  .bg-opacity {
+    @apply bg-white/10 dark:bg-white/5;
+  }
 }
 
 @layer components {
