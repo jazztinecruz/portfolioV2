@@ -8,16 +8,16 @@
 
 @layer base {
   .primary {
-    @apply bg-slate-200 text-black dark:bg-dark dark:text-white;
+    @apply bg-slate-200 text-black dark:bg-black dark:text-white;
   }
   .secondary {
-    @apply dark:bg-slate-200 dark:text-black bg-dark text-white;
+    @apply dark:bg-slate-200 dark:text-black bg-black text-white;
   }
   .tertiary {
     @apply text-gray-800 dark:text-gray-300;
   }
   .primary-border {
-    @apply border-dark dark:border-slate-200 dark:border-opacity-50;
+    @apply border-black dark:border-slate-200 dark:border-opacity-50;
   }
 }
 

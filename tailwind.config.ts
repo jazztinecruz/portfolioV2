@@ -7,11 +7,7 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        dark: "#222222",
-      },
-    },
+    extend: {},
   },
   plugins: [],
   darkMode: "class",

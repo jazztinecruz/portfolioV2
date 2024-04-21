@@ -25,7 +25,9 @@ const Hero: Page = () => {
             Website Designer
           </h1>
         </div>
-        <h3 className="text-xl md:text-2xl tracking-widest">@JAZZTINECRUZ</h3>
+        <h3 className="text-xl md:text-2xl tracking-widest">
+          @JAZZTINECRUZ
+        </h3>
       </div>
     </section>
   );

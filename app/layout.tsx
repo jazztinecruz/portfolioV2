@@ -3,6 +3,7 @@ import type { Children } from "@/libraries/types";
 import { Inter, Satisfy, Roboto_Mono } from "next/font/google";
 import "@/styles/globals.css";
 import ThemeProvider from "@/libraries/contexts/use-theme";
+import Radials from "./_components/radials";
 
 const inter = Inter({ subsets: ["latin"] });
 export const roboto = Roboto_Mono({ subsets: ["latin"] });
@@ -22,9 +23,12 @@ const RootLayout = ({ children }: Props) => {
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider>
-          <main className="primary">
-            <div className="max-w-6xl mx-auto w-full grid gap-8 p-6 primary">
-              {children}
+          <main className="primary relative">
+            <Radials />
+            <div className="bg-white/10 backdrop-blur-xl h-full aboslute inset-0">
+              <div className="max-w-6xl mx-auto w-full grid gap-8 p-6">
+                {children}
+              </div>
             </div>
           </main>
         </ThemeProvider>
