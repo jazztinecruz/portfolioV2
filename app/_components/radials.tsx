@@ -6,14 +6,13 @@ import Image from "next/image";
 const Radials = () => {
   const { isDarkMode } = useTheme();
 
-  const radial1 = !isDarkMode ? "/radial5.png" : "/radial1.png";
-  const radial2 = !isDarkMode ? "/radial7.png" : "/radial2.png";
+  if (!isDarkMode) return null;
 
   return (
     <div>
       <div className="fixed left-0 transform top-64 overflow-hidden">
         <Image
-          src={radial1}
+          src="/radial1.png"
           width={800}
           height={800}
           alt="radial"
@@ -22,7 +21,7 @@ const Radials = () => {
       </div>
       <div className="fixed right-0 rotate-180 -top-40 transform overflow-hidden">
         <Image
-          src={radial2}
+          src="/radial2.png"
           width={800}
           height={800}
           alt="radial"
