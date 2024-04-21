@@ -18,7 +18,7 @@ const Projects = () => {
         {projects.map((project) => (
           <div
             key={project.title}
-            className="flex flex-col gap-4 p-6 rounded-md">
+            className="flex flex-col gap-4 py-6 rounded-md">
             <div className="flex items-center gap-3">
               <h3 className="text-lg font-semibold">{project.title}</h3>
               <Link href={project.url ?? ""}>
