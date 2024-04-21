@@ -3,7 +3,7 @@ import { Title } from "../../titles";
 
 const Character = () => {
   return (
-    <div className="grid md:grid-cols-2 items-center gap-8 mt-12">
+    <section className="grid md:grid-cols-2 items-center gap-8 mt-12">
       <div className="flex flex-wrap gap-3">
         {charateristics.map((character) => (
           <div
@@ -23,7 +23,7 @@ const Character = () => {
           voluptatibus possimus quibusdam, placeat dignissimos veritatis.
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 

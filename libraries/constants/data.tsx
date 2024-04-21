@@ -1,4 +1,4 @@
-import type { Education, MenuItem, Work } from "@/libraries/types";
+import type { Education, MenuItem, TechStack, Work } from "@/libraries/types";
 
 export const menus: MenuItem[] = [
   { label: "Home", id: "#home" },
@@ -78,4 +78,22 @@ export const works: Work[] = [
     type: "internship",
     isCurrent: false,
   },
+];
+
+export const techStacks: TechStack[] = [
+  { label: "HTML", src: "/logos/html.png" },
+  { label: "CSS", src: "/logos/css.png" },
+  { label: "JavaScript", src: "/logos/javascript.png" },
+  { label: "TypeScript", src: "/logos/typescript.png" },
+  { label: "React", src: "/logos/react.webp" },
+  { label: "NextJS", src: "/logos/next.png" },
+  { label: "NodeJS", src: "/logos/nodejs.png" },
+  { label: "Tailwind CSS", src: "/logos/tailwind.png" },
+  { label: "Sass", src: "/logos/sass.png" },
+  { label: "Hygraph CMS", src: "/logos/hygraph.png" },
+  { label: "Headless UI", src: "/logos/headless.png" },
+  { label: "Material UI", src: "/logos/mui.png" },
+  { label: "GraphQL", src: "/logos/graphql.png" },
+  { label: "Figma", src: "/logos/figma.webp" },
+  { label: "Git", src: "/logos/git.png" },
 ];

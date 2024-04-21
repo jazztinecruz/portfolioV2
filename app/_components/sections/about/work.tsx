@@ -3,7 +3,7 @@ import { works } from "@/libraries/constants/data";
 
 const WorkExperience = () => {
   return (
-    <div className="grid md:grid-cols-2 items-center gap-8 mt-12">
+    <section className="grid md:grid-cols-2 items-center gap-8 mt-12">
       <div className="flex flex-col gap-4 items-start">
         <Title>Work Experience</Title>
         <p className="tertiary">
@@ -34,7 +34,7 @@ const WorkExperience = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

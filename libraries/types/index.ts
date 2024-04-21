@@ -20,3 +20,7 @@ export type Work = {
   type: "full-time" | "part-time" | "internship" | "contractual" | "freelance";
   isCurrent: boolean;
 };
+export type TechStack = {
+  label: string;
+  src: string;
+};
