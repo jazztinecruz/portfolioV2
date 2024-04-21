@@ -9,9 +9,7 @@ const EducationalBackground = () => {
         <Title>Educational Background</Title>
         <p className="tertiary">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
-          eaque similique delectus, expedita sapiente ab maxime soluta
-          praesentium nostrum a voluptatem tenetur consectetur laudantium
-          voluptatibus possimus quibusdam, placeat dignissimos veritatis.
+          eaque similique delectus, expedita sapiente ab maxime.
         </p>
       </div>
 

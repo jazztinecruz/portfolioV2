@@ -5,7 +5,7 @@ import { SectionTitle } from "../../titles";
 
 const TechStacks = () => {
   return (
-    <section className="grid items-center gap-8 mt-12">
+    <section id="tech-stacks" className="grid items-center gap-8 mt-12">
       <SectionTitle>Tech Stacks</SectionTitle>
       <div className="grid  grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-y-4 items-center">
         {techStacks.map((tech) => {
