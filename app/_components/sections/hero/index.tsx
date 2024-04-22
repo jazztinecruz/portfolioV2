@@ -30,7 +30,7 @@ const Hero: Page = () => {
           <div
             className={`flex items-center justify-center gap-4 ${satisfy.className}`}>
             <span className="text-4xl">and</span>
-            <h1 className="text-6xl md:text-8xl tracking-wider">
+            <h1 className="text-6xl md:text-8xl tracking-wider text-left">
               Web <span className="dark:bg-text">Designer</span>
             </h1>
           </div>

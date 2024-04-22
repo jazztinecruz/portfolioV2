@@ -23,7 +23,7 @@ const WorkExperience = () => {
               }`}
             />
 
-            <div className="flex flex-col ml-8">
+            <div className="flex flex-col ml-8 whitespace-nowrap flex-wrap">
               <h3 className="font-medium">{work.company}</h3>
               <div className="text-sm flex items-center font-light tertiary gap-2">
                 <p>{work.year}</p>
