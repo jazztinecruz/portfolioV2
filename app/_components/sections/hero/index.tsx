@@ -22,7 +22,7 @@ const Hero: Page = () => {
           </h1>
           <h1
             className={`text-6xl md:text-8xl tracking-wider ${satisfy.className}`}>
-            Website Designer
+            Web Designer
           </h1>
         </div>
         <h3 className="text-xl md:text-2xl tracking-widest">
