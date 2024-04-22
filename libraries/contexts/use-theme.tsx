@@ -31,7 +31,7 @@ const ThemeProvider = ({ children }: Props) => {
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div className={theme === "dark" ? "light" : "dark"}>{children}</div>
+      <div className={theme === "dark" ? "dark" : "light"}>{children}</div>
     </ThemeContext.Provider>
   );
 };

@@ -33,16 +33,16 @@ const Projects = () => {
                 {isDarkMode ? (
                   <Image
                     alt="Github"
-                    src="/logos/github-light.png"
-                    width={20}
-                    height={20}
+                    src="/logos/github-dark.webp"
+                    width={30}
+                    height={30}
                   />
                 ) : (
                   <Image
                     alt="Github"
-                    src="/logos/github-dark.webp"
-                    width={30}
-                    height={30}
+                    src="/logos/github-light.png"
+                    width={20}
+                    height={20}
                   />
                 )}
                 <span className="text-sm tertiary">Github</span>

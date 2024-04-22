@@ -6,7 +6,7 @@ import Image from "next/image";
 const Radials = () => {
   const { isDarkMode } = useTheme();
 
-  if (!isDarkMode) return null;
+  if (isDarkMode) return null;
 
   return (
     <div>
