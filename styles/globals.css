@@ -20,7 +20,7 @@
     @apply border-black dark:border-slate-200 dark:border-opacity-50;
   }
   .bg-opacity {
-    @apply bg-white/10 dark:bg-white/5;
+    @apply bg-white/20 dark:bg-black/5 backdrop-blur-lg;
   }
 }
 

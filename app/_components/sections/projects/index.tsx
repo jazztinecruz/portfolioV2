@@ -29,7 +29,7 @@ const Projects = () => {
             <Link href={project.github}>
               <div
                 title="Github Url"
-                className="border primary-border rounded px-3 flex items-center gap-2 py-1 w-fit">
+                className="bg-opacity rounded px-3 flex items-center gap-2 py-1 w-fit">
                 {isDarkMode ? (
                   <Image
                     alt="Github"

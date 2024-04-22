@@ -8,7 +8,7 @@ const Character = () => {
         {charateristics.map((character) => (
           <div
             key={character}
-            className="border primary-border rounded-md w-fit px-4 py-2 text-sm md:text-md">
+            className="bg-opacity rounded-md w-fit px-4 py-2 text-sm md:text-md">
             {character}
           </div>
         ))}
