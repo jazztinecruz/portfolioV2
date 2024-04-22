@@ -23,9 +23,9 @@ const WorkExperience = () => {
               }`}
             />
 
-            <div className="flex flex-col ml-8 whitespace-nowrap flex-wrap">
+            <div className="flex flex-col ml-8">
               <h3 className="font-medium">{work.company}</h3>
-              <div className="text-sm flex items-center font-light tertiary gap-2">
+              <div className="text-sm flex items-center  whitespace-nowrap flex-wrap font-light tertiary gap-2">
                 <p>{work.year}</p>
                 <div className="w-1 h-1 rounded-full secondary" />
                 <p>{work.months}</p>
