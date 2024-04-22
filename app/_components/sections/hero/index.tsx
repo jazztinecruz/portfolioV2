@@ -2,6 +2,7 @@ import type { Page } from "@/libraries/types";
 import { roboto, satisfy } from "@/app/layout";
 import Navbar from "./navbar";
 import ThemeSwitcher from "./theme";
+import Link from "next/link";
 
 const Hero: Page = () => {
   return (
@@ -10,7 +11,9 @@ const Hero: Page = () => {
         <Navbar />
         <div className="flex items-center gap-4 ml-auto">
           <ThemeSwitcher />
-          <button className="btn">Email ME</button>
+          <Link href="mailto: me@jazztinecruz.com" className="btn">
+            Email ME
+          </Link>
         </div>
       </header>
 

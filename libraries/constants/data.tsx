@@ -151,6 +151,9 @@ export const projects: Project[] = [
 ];
 
 export const socials: Social[] = [
-  { link: "www.linkedin.com/in/jazztinecruz", src: "/logos/linkedin.png" },
-  { link: "me@jazztinecruz.com", src: "/logos/gmail.png" },
+  {
+    link: "https://www.linkedin.com/in/jazztinecruz/",
+    src: "/logos/linkedin.png",
+  },
+  { link: "mailto: me@jazztinecruz.com", src: "/logos/gmail.png" },
 ];
