@@ -13,21 +13,28 @@ type Props = {
 };
 
 const ThemeProvider = ({ children }: Props) => {
-  const [theme, setTheme] = useState<Theme>(() => {
-    let storedTheme: Theme = "dark";
-    if (typeof window !== "undefined") {
-      storedTheme = window.localStorage.getItem("theme") as Theme;
-    }
-    return storedTheme;
-  });
+  const [theme, setTheme] = useState<Theme>("dark");
+  const [isHydrated, setIsHydrated] = useState(false);
+
+  useEffect(() => {
+    const storedTheme = window.localStorage.getItem("theme") as Theme;
+    setTheme(storedTheme || "dark");
+    setIsHydrated(true);
+  }, []);
 
   const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    setTheme((currentTheme) => (currentTheme === "dark" ? "light" : "dark"));
   };
 
   useEffect(() => {
-    localStorage.setItem("theme", theme);
-  }, [theme, window.localStorage]);
+    if (isHydrated) {
+      window.localStorage.setItem("theme", theme);
+    }
+  }, [theme, isHydrated]);
+
+  if (!isHydrated) {
+    return null;
+  }
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
