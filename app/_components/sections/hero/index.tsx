@@ -23,7 +23,7 @@ const Hero: Page = () => {
       <div className="grid items-center text-center justify-center h-full">
         <div className="space-y-8 md:mt-20">
           <h1
-            className={`text-6xl md:text-8xl font-extrabold leading-snug ${roboto.className}`}>
+            className={`text-5xl md:text-8xl font-extrabold leading-snug ${roboto.className}`}>
             <span className="dark:bg-text">Frontend</span> <br /> Software
             Engineer
           </h1>
