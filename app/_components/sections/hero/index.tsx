@@ -35,7 +35,7 @@ const Hero: Page = () => {
             </h1>
           </div>
         </div>
-        <h3 className="text-xl md:text-2xl tracking-widest bg-text">
+        <h3 className="text-xl md:text-2xl tracking-widest dark:bg-text">
           @JAZZTINECRUZ
         </h3>
       </div>
