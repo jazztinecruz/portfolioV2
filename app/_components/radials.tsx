@@ -16,6 +16,7 @@ const Radials = () => {
           width={800}
           height={800}
           alt="radial"
+          priority
           className="rounded-r-full"
         />
       </div>
@@ -25,6 +26,7 @@ const Radials = () => {
           width={800}
           height={800}
           alt="radial"
+          priority
           className="rounded-r-full"
         />
       </div>

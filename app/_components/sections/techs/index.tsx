@@ -11,15 +11,15 @@ const TechStacks = () => {
           return (
             <div
               title={tech.label}
-              id={tech.label}
+              key={tech.label}
               className="relative bg-transparent w-fit">
               <Image
-                key={tech.label}
                 src={tech.src}
                 alt={tech.label}
-                width={50}
-                height={50}
+                width={45}
+                height={45}
                 className="rounded-full object-center"
+                style={{ width: "auto", height: "auto" }}
               />
             </div>
           );

@@ -128,21 +128,21 @@ export const projects: Project[] = [
     github: "",
   },
   {
-    title: "Lorem Ipsum Sit Amet",
+    title: "Lorem Ipsum et Dolor",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc.",
     url: "",
     github: "",
   },
   {
-    title: "Lorem Ipsum Sit Amet",
+    title: "Lorem Ipsum Sit Amet Dolor",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc.",
     url: "",
     github: "",
   },
   {
-    title: "Lorem Ipsum Sit Amet",
+    title: "Lorem Ipsum Sit Amet Dolor et",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc.",
     url: "",
