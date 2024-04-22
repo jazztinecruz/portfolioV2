@@ -1,8 +1,11 @@
 import type { Page } from "@/libraries/types";
-import { roboto, satisfy } from "@/app/layout";
 import Navbar from "./navbar";
 import ThemeSwitcher from "./theme";
 import Link from "next/link";
+import { Roboto_Mono, Satisfy } from "next/font/google";
+
+const roboto = Roboto_Mono({ subsets: ["latin"] });
+const satisfy = Satisfy({ subsets: ["latin"], weight: "400" });
 
 const Hero: Page = () => {
   return (
