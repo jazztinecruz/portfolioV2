@@ -22,6 +22,10 @@
   .bg-opacity {
     @apply bg-white/20 dark:bg-white/[0.03] backdrop-blur-lg;
   }
+
+  .bg-text {
+    @apply bg-gradient-to-r from-darkblue to-darkpink text-transparent bg-clip-text;
+  }
 }
 
 @layer components {

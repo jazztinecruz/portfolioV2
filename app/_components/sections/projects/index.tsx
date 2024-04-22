@@ -12,7 +12,9 @@ const Projects = () => {
 
   return (
     <section id="projects" className="grid items-center gap-8 mt-12">
-      <SectionTitle>Live Projects</SectionTitle>
+      <SectionTitle>
+        Live <span className="dark:bg-text">Projects</span>
+      </SectionTitle>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 items-center">
         {projects.map((project) => (
