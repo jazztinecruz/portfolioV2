@@ -10,7 +10,7 @@ import type {
 export const menus: MenuItem[] = [
   { label: "Home", id: "#home" },
   { label: "About ME", id: "#about" },
-  { label: "Tech Stacks", id: "#tech-stacks" },
+  { label: "Technologies", id: "#technologies" },
   { label: "Projects", id: "#projects" },
   { label: "Contact ME", id: "#socials" },
 ];
@@ -93,7 +93,7 @@ export const works: Work[] = [
   },
 ];
 
-export const techStacks: TechStack[] = [
+export const technologies: TechStack[] = [
   { label: "HTML", src: "/logos/html.png" },
   { label: "CSS", src: "/logos/css.png" },
   { label: "JavaScript", src: "/logos/javascript.png" },

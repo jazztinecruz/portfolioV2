@@ -1,15 +1,15 @@
-import { techStacks } from "@/libraries/constants/data";
+import { technologies } from "@/libraries/constants/data";
 import { SectionTitle } from "../../titles";
 import Image from "next/image";
 
-const TechStacks = () => {
+const Technologies = () => {
   return (
-    <section id="tech-stacks" className="grid items-center gap-8 mt-12">
+    <section id="technologies" className="grid items-center gap-8 mt-12">
       <SectionTitle>
-        <span className="bg-text">Tech</span> Stacks
+        <span className="bg-text">Technologies</span>
       </SectionTitle>
       <div className="grid  grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-y-4 items-center">
-        {techStacks.map((tech) => {
+        {technologies.map((tech) => {
           return (
             <div
               title={tech.label}
@@ -31,4 +31,4 @@ const TechStacks = () => {
   );
 };
 
-export default TechStacks;
+export default Technologies;
