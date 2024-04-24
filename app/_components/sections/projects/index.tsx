@@ -18,11 +18,11 @@ const Projects = () => {
           {projects.development.map((code) => (
             <div
               key={code.title}
-              className="relative w-full h-48 lg:h-56 overflow-hidden">
-              <div className="absolute h-[50%] inset-0 bg-gradient-to-r from-transparent via-darkblue to-darkpink animate-spin-slow" />
+              className="relative w-full h-48 lg:h-56 rounded-md  overflow-hidden">
+              <div className="absolute h-[50%] inset-0 rounded-md bg-gradient-to-r from-transparent via-darkblue to-darkpink animate-spin-slow" />
               <div className="absolute inset-[0.07rem] primary p-4 flex flex-col justify-center gap-4 py-4 lg:py-6 rounded-md">
                 <div className="flex items-center gap-3">
-                  <h3 className="text-lg font-semibold">{code.title}</h3>
+                  <h3 className="font-semibold">{code.title}</h3>
                   {code.url && (
                     <Link
                       href={code.url}
@@ -58,7 +58,7 @@ const Projects = () => {
               </Link>
               <div className="bg-opacity p-4 space-y-2 rounded-b-md">
                 <div className="flex items-center gap-3">
-                  <h3 className="text-lg font-semibold">{design.title}</h3>
+                  <h3 className="font-semibold">{design.title}</h3>
                   <Link
                     href={design.pdf}
                     target="_blank"
