@@ -56,6 +56,7 @@ export const works: Work[] = [
     year: "Jan 2023 - Present",
     months: "1 yr and 4 mos",
     type: "full-time",
+    link: "https://hiretalk.ai",
     isCurrent: true,
   },
   {
@@ -63,6 +64,7 @@ export const works: Work[] = [
     year: "Oct 2021 - Present",
     months: "2 yrs and 7 mos",
     type: "freelance",
+    link: "https://github.com/jazztinecruz",
     isCurrent: true,
   },
   {
@@ -70,6 +72,7 @@ export const works: Work[] = [
     year: "July 2023 - July 2023 ",
     months: "1 mo",
     type: "contractual",
+    link: "https://ghalebgt.com",
     isCurrent: false,
   },
   {
@@ -78,12 +81,14 @@ export const works: Work[] = [
     months: "6 mos",
     type: "part-time",
     isCurrent: false,
+    link: "https://www.linkedin.com/company/checkpointlabs",
   },
   {
     company: "HireTalk Inc.",
     year: "Oct 2022 - Jan 2023",
     months: "4 mos",
     type: "internship",
+    link: "https://hiretalk.ai",
     isCurrent: false,
   },
 ];

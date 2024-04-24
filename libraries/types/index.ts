@@ -19,6 +19,7 @@ export type Work = {
   months: string;
   type: "full-time" | "part-time" | "internship" | "contractual" | "freelance";
   isCurrent: boolean;
+  link: string;
 };
 export type TechStack = {
   label: string;

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Title } from "../../titles";
 import { works } from "@/libraries/constants/data";
 
@@ -24,7 +25,11 @@ const WorkExperience = () => {
             />
 
             <div className="flex flex-col ml-8">
-              <h3 className="font-medium">{work.company}</h3>
+              <Link href={work.link}>
+                <h3 className="font-medium hover:underline cursor-pointer">
+                  {work.company}
+                </h3>
+              </Link>
               <div className="text-sm flex items-center  whitespace-nowrap flex-wrap font-light tertiary gap-2">
                 <p>{work.year}</p>
                 <div className="w-1 h-1 rounded-full secondary" />
