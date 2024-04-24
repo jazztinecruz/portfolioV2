@@ -113,45 +113,23 @@ export const technologies: TechStack[] = [
 
 export const projects: Project[] = [
   {
-    title: "Lorem Ipsum",
+    title: "AI-Driven Design Challenge",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc.",
+      "A web platform where you can enhance your design skills as you take on the AI-Driven Design Challenge and get inspirations from the other designs.",
+    github: "https://github.com/jazztinecruz/ai-driven-design-challenge",
+  },
+  {
+    title: "Clode",
+    description:
+      "A web platform where you can Store, Share, and Manage Code Snippets empowering developers with enhanced collaboration and productivity tools.",
     url: "",
-    github: "",
+    github: "https://github.com/nikkoabucejo/clode",
   },
   {
     title: "Codery",
     description:
-      "A web-based platform for freelancers to find jobs and clients.",
-    github: "",
-  },
-  {
-    title: "Lorem Ipsum Sit Amet",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc.",
-    url: "",
-    github: "",
-  },
-  {
-    title: "Lorem Ipsum et Dolor",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc.",
-    url: "",
-    github: "",
-  },
-  {
-    title: "Lorem Ipsum Sit Amet Dolor",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc.",
-    url: "",
-    github: "",
-  },
-  {
-    title: "Lorem Ipsum Sit Amet Dolor et",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc.",
-    url: "",
-    github: "",
+      "A web platform for Software Engineer Freelancers. Designed to streamline the freelancer-client matchmaking process with professionalism and efficiency.",
+    github: "https://github.com/jazztinecruz/codery",
   },
 ];
 
