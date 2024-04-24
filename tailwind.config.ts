@@ -12,6 +12,9 @@ const config: Config = {
         darkpink: "#FF3399",
         darkblue: "#5BA4FF",
       },
+      animation: {
+        "spin-slow": "spin 6s infinite",
+      },
     },
   },
   plugins: [],

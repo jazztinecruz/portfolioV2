@@ -18,20 +18,23 @@ const Projects = () => {
           {projects.development.map((code) => (
             <div
               key={code.title}
-              className="flex flex-col gap-4 py-4 lg:py-6 rounded-md">
-              <div className="flex items-center gap-3">
-                <h3 className="text-lg font-semibold">{code.title}</h3>
-                {code.url && (
-                  <Link
-                    href={code.url}
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <ArrowUpRightIcon title="Live Url" className="w-5 h-5" />
-                  </Link>
-                )}
+              className="relative w-full h-56 overflow-hidden">
+              <div className="absolute h-[50%] inset-0 bg-gradient-to-r from-transparent via-darkblue to-darkpink animate-spin-slow" />
+              <div className="absolute inset-[0.07rem] primary p-4 flex flex-col gap-4 py-4 lg:py-6 rounded-md">
+                <div className="flex items-center gap-3">
+                  <h3 className="text-lg font-semibold">{code.title}</h3>
+                  {code.url && (
+                    <Link
+                      href={code.url}
+                      target="_blank"
+                      rel="noopener noreferrer">
+                      <ArrowUpRightIcon title="Live Url" className="w-5 h-5" />
+                    </Link>
+                  )}
+                </div>
+                <p className="text-sm tertiary">{code.description}</p>
+                <Github url={code.github} hasArrow />
               </div>
-              <p className="text-sm tertiary">{code.description}</p>
-              <Github url={code.github} hasArrow />
             </div>
           ))}
         </div>
