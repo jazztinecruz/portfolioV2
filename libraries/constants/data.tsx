@@ -111,31 +111,56 @@ export const technologies: TechStack[] = [
   { label: "Git", src: "/logos/git.png" },
 ];
 
-export const projects: Project[] = [
-  {
-    title: "AI-Driven Design Challenge",
-    description:
-      "A web platform where you can enhance your design skills as you take on the AI-Driven Design Challenge and get inspirations from the other designs.",
-    github: "https://github.com/jazztinecruz/ai-driven-design-challenge",
-  },
-  {
-    title: "Clode",
-    description:
-      "A web platform where you can Store, Share, and Manage Code Snippets empowering developers with enhanced collaboration and productivity tools.",
-    url: "",
-    github: "https://github.com/nikkoabucejo/clode",
-  },
-  {
-    title: "Codery",
-    description:
-      "A web platform for Software Engineer Freelancers. Designed to streamline the freelancer-client matchmaking process with professionalism and efficiency.",
-    github: "https://github.com/jazztinecruz/codery",
-  },
-];
-
 export const socials: Social[] = [
   {
     link: "https://www.linkedin.com/in/jazztinecruz/",
     src: "/logos/linkedin.png",
   },
 ];
+
+export const projects: Project = {
+  development: [
+    {
+      title: "AI-Driven Design Challenge",
+      description:
+        "A web platform where you can enhance your design skills as you take on the AI-Driven Design Challenge and get inspirations from the other designs.",
+      github: "https://github.com/jazztinecruz/ai-driven-design-challenge",
+    },
+    {
+      title: "Clode",
+      description:
+        "A web platform where you can Store, Share, and Manage Code Snippets empowering developers with enhanced collaboration and productivity tools.",
+      url: "",
+      github: "https://github.com/nikkoabucejo/clode",
+    },
+    {
+      title: "Codery",
+      description:
+        "A web platform for Software Engineer Freelancers. Designed to streamline the freelancer-client matchmaking process with professionalism and efficiency.",
+      github: "https://github.com/jazztinecruz/codery",
+    },
+  ],
+  design: [
+    {
+      title: "AI-Driven Image Generator",
+      description:
+        "A website design that generates AI-driven images for you. It uses AI to generate images based on the user's input.",
+      thumbnail: "/ai-image-thumbnail.png",
+      pdf: "/",
+    },
+    {
+      title: "Crafter",
+      description:
+        "An e-commerce web design that showcases the products of the Craft store.",
+      thumbnail: "/crafter-thumbnail.png",
+      pdf: "/crafter.pdf",
+    },
+    {
+      title: "Signup",
+      description:
+        "A signup page facilitating user registration through third-party authentication or traditional email-password scheme.",
+      thumbnail: "/signup-thumbnail.png",
+      pdf: "/signup.pdf",
+    },
+  ],
+};

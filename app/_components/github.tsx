@@ -14,7 +14,7 @@ const Github = ({ url, hasArrow = false }: Props) => {
   const { isDarkMode } = useTheme();
 
   return (
-    <Link href={url}>
+    <Link href={url} target="_blank" rel="noopener noreferrer">
       <div
         title="Github Url"
         className="bg-opacity rounded px-3 flex items-center gap-2 py-1 w-fit">
