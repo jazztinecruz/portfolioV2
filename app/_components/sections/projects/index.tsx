@@ -1,15 +1,10 @@
-"use client";
-
 import { projects } from "@/libraries/constants/data";
 import { SectionTitle } from "../../titles";
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
-import { useTheme } from "@/libraries/contexts/use-theme";
 import Link from "next/link";
-import Image from "next/image";
+import Github from "../../github";
 
 const Projects = () => {
-  const { isDarkMode } = useTheme();
-
   return (
     <section id="projects" className="grid items-center gap-8 mt-12">
       <SectionTitle>
@@ -28,29 +23,7 @@ const Projects = () => {
               </Link>
             </div>
             <p className="text-sm tertiary">{project.description}</p>
-            <Link href={project.github}>
-              <div
-                title="Github Url"
-                className="bg-opacity rounded px-3 flex items-center gap-2 py-1 w-fit">
-                {isDarkMode ? (
-                  <Image
-                    alt="Github"
-                    src="/logos/github-dark.webp"
-                    width={30}
-                    height={30}
-                  />
-                ) : (
-                  <Image
-                    alt="Github"
-                    src="/logos/github-light.png"
-                    width={20}
-                    height={20}
-                  />
-                )}
-                <span className="text-sm tertiary">Github</span>
-                <ArrowUpRightIcon className="w-3 h-3" />
-              </div>
-            </Link>
+            <Github url={project.github} hasArrow />
           </div>
         ))}
       </div>

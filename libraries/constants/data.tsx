@@ -160,5 +160,4 @@ export const socials: Social[] = [
     link: "https://www.linkedin.com/in/jazztinecruz/",
     src: "/logos/linkedin.png",
   },
-  { link: "mailto: me@jazztinecruz.com", src: "/logos/gmail.png" },
 ];
