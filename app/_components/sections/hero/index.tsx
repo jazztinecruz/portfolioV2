@@ -23,19 +23,18 @@ const Hero: Page = () => {
       <div className="grid items-center text-center justify-center h-full">
         <div className="space-y-8 md:mt-20">
           <h1
-            className={`text-5xl md:text-8xl font-extrabold leading-snug ${roboto.className}`}>
-            <span className="dark:bg-text">Frontend</span> <br /> Software
-            Engineer
+            className={`text-6xl md:text-8xl font-extrabold leading-snug ${roboto.className}`}>
+            <span className="bg-text">Frontend</span> <br /> Software Engineer
           </h1>
           <div
             className={`flex flex-col md:flex-row items-center justify-center gap-4 ${satisfy.className}`}>
             <span className="text-4xl">and</span>
             <h1 className="text-6xl md:text-8xl tracking-wider">
-              Web <span className="dark:bg-text">Designer</span>
+              Web <span className="bg-text">Designer</span>
             </h1>
           </div>
         </div>
-        <h3 className="text-xl md:text-2xl tracking-widest dark:bg-text">
+        <h3 className="text-xl md:text-2xl tracking-widest bg-text">
           @JAZZTINECRUZ
         </h3>
       </div>

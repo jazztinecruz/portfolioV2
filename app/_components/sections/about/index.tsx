@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section id="about" className="flex flex-col space-y-8 items-center">
       <SectionTitle>
-        Get to Know <span className="dark:bg-text">ME</span>
+        Get to Know <span className="bg-text">ME</span>
       </SectionTitle>
       <p className="max-w-4xl text-center">
         A dedicated and a fast-learner Frontend Software Engineer and a UI
