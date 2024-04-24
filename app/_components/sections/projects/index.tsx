@@ -18,9 +18,11 @@ const Projects = () => {
             className="flex flex-col gap-4 py-4 lg:py-6 rounded-md">
             <div className="flex items-center gap-3">
               <h3 className="text-lg font-semibold">{project.title}</h3>
-              <Link href={project.url ?? ""}>
-                <ArrowUpRightIcon title="Live Url" className="w-5 h-5" />
-              </Link>
+              {project.url && (
+                <Link href={project.url}>
+                  <ArrowUpRightIcon title="Live Url" className="w-5 h-5" />
+                </Link>
+              )}
             </div>
             <p className="text-sm tertiary">{project.description}</p>
             <Github url={project.github} hasArrow />
