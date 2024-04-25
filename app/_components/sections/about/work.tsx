@@ -10,8 +10,8 @@ const WorkExperience = () => {
         <p className="tertiary">
           In my professional journey, I&apos;ve embraced each role as an
           opportunity to learn, contribute, and grow. From collaborating with
-          diverse teams to tackling complex challenges, I've gained invaluable
-          experience that has honed my skills.
+          diverse teams to tackling complex challenges, I&apos;ve gained
+          invaluable experience that has honed my skills.
         </p>
       </div>
 
