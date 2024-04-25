@@ -145,22 +145,22 @@ export const projects: Project = {
       title: "AI-Driven Image Generator",
       description:
         "A website design that generates AI-driven images for you. It uses AI to generate images based on the user's input.",
-      thumbnail: "/ai-image-thumbnail.png",
-      pdf: "/",
+      thumbnail: "/thumbnails/ai-image-thumbnail.png",
+      pdf: "/designs/ai-image.pdf",
     },
     {
       title: "Crafter",
       description:
         "An e-commerce web design that showcases the products of the Craft store.",
-      thumbnail: "/crafter-thumbnail.png",
-      pdf: "/crafter.pdf",
+      thumbnail: "/thumbnails/crafter-thumbnail.png",
+      pdf: "/designs/crafter.pdf",
     },
     {
       title: "Signup",
       description:
         "A signup page facilitating user registration through third-party authentication or traditional email-password scheme.",
-      thumbnail: "/signup-thumbnail.png",
-      pdf: "/signup.pdf",
+      thumbnail: "/thumbnails/signup-thumbnail.png",
+      pdf: "/designs/signup.pdf",
     },
   ],
 };

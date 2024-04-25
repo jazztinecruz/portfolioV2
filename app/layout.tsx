@@ -3,7 +3,6 @@ import type { Children } from "@/libraries/types";
 import { Inter } from "next/font/google";
 import "@/styles/globals.css";
 import ThemeProvider from "@/libraries/contexts/use-theme";
-import Radials from "./_components/radials";
 
 const inter = Inter({ subsets: ["latin"] });
 
