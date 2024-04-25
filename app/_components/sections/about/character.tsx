@@ -17,8 +17,10 @@ const Character = () => {
       <div className="flex flex-col gap-4 items-start">
         <Title>Character</Title>
         <p className="tertiary">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
-          eaque similique delectus, expedita sapiente ab maxime.
+          I have positive mindset that challenges are not merely additional
+          circumstances but an opportunities for personal development and
+          learning. I approach obstacles with determination and resilience,
+          viewing them as pathways to growth.
         </p>
       </div>
     </section>

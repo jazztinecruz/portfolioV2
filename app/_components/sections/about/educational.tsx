@@ -8,8 +8,9 @@ const EducationalBackground = () => {
       <div className="flex flex-col gap-4 items-start">
         <Title>Educational Background</Title>
         <p className="tertiary">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
-          eaque similique delectus, expedita sapiente ab maxime.
+          My educational journey has been marked by resilience and
+          determination. These experiences have not only shaped my intellect but
+          also strengthened my character.
         </p>
       </div>
 

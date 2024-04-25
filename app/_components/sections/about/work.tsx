@@ -4,12 +4,14 @@ import { works } from "@/libraries/constants/data";
 
 const WorkExperience = () => {
   return (
-    <section className="grid md:grid-cols-2 items-center gap-8 mt-12">
+    <section className="grid md:grid-cols-2 items-center gap-8 lg:gap-12 mt-12">
       <div className="flex flex-col gap-4 items-start">
         <Title>Work Experience</Title>
         <p className="tertiary">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
-          eaque similique delectus, expedita sapiente.
+          In my professional journey, I&apos;ve embraced each role as an
+          opportunity to learn, contribute, and grow. From collaborating with
+          diverse teams to tackling complex challenges, I've gained invaluable
+          experience that has honed my skills.
         </p>
       </div>
 
