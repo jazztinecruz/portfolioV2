@@ -17,6 +17,9 @@ const Hero: Page = () => {
           <Link href="mailto: me@jazztinecruz.com" className="btn">
             Email ME
           </Link>
+          <Link target="_index" href="/cruz-jazztine-resume.pdf">
+            <button className="btn">Resume</button>
+          </Link>
         </div>
       </header>
 
