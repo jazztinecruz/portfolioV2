@@ -107,7 +107,7 @@ export const projects: Project = {
     {
       title: "Crafter",
       description:
-        "An e-commerce web design that showcases the products of the Craft store.",
+        "An e-commerce web design that showcases the products of the Craft store. The design focuses on the uniqueness of each product.",
       thumbnail: "/thumbnails/crafter-thumbnail.png",
       pdf: "/designs/crafter.pdf",
     },
