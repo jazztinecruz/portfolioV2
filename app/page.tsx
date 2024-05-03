@@ -13,7 +13,7 @@ const HomePage: Page = () => {
       <About />
       <Technologies />
       <Projects />
-      <Socials />
+      <Socials withHeader />
     </div>
   );
 };
