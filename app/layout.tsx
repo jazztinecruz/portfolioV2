@@ -21,10 +21,8 @@ const RootLayout = ({ children }: Props) => {
       <body className={inter.className}>
         <ThemeProvider>
           <main className="primary relative">
-            <div className="bg-opacity backdrop-blur-xl h-full">
-              <div className="max-w-6xl mx-auto w-full grid gap-8 p-6">
-                {children}
-              </div>
+            <div className="max-w-6xl mx-auto w-full grid gap-8 p-6">
+              {children}
             </div>
           </main>
         </ThemeProvider>

@@ -8,19 +8,19 @@ const Technologies = () => {
       <SectionTitle>
         <span className="bg-text">Technologies</span>
       </SectionTitle>
-      <div className="grid  grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-y-4 items-center">
+      <div className="flex flex-wrap gap-8">
         {technologies.map((tech) => {
           return (
             <div
               title={tech.label}
               key={tech.label}
-              className="relative bg-transparent w-fit">
+              className="relative bg-opacity rounded-md w-fit px-4 py-2 grid place-items-center">
               <Image
                 src={tech.src}
                 alt={tech.label}
-                width={45}
-                height={45}
-                className="rounded-full object-center"
+                width={40}
+                height={40}
+                className="object-center"
                 style={{ width: "auto", height: "auto" }}
               />
             </div>

@@ -16,13 +16,9 @@
   .tertiary {
     @apply text-gray-800 dark:text-gray-300;
   }
-  .primary-border {
-    @apply border-black dark:border-slate-200 dark:border-opacity-50;
-  }
   .bg-opacity {
-    @apply bg-white/20 dark:bg-white/[0.03] backdrop-blur-lg;
+    @apply bg-slate-100/50 dark:bg-white/10 backdrop-blur-lg;
   }
-
   .bg-text {
     @apply bg-gradient-to-r from-darkblue to-darkpink text-transparent bg-clip-text;
   }

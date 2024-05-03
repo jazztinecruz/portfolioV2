@@ -1,8 +1,8 @@
 import type { Page } from "@/libraries/types";
 import Navbar from "./navbar";
 import ThemeSwitcher from "./theme";
-import Link from "next/link";
 import { Roboto_Mono, Satisfy } from "next/font/google";
+import Socials from "../socials";
 
 const roboto = Roboto_Mono({ subsets: ["latin"] });
 const satisfy = Satisfy({ subsets: ["latin"], weight: "400" });
@@ -12,11 +12,9 @@ const Hero: Page = () => {
     <section id="home" className="space-y-4 h-screen">
       <header className="flex items-center justify-between">
         <Navbar />
-        <div className="flex items-center gap-4 ml-auto">
+        <div className="flex items-center gap-10 ml-auto">
           <ThemeSwitcher />
-          <Link href="mailto: me@jazztinecruz.com" className="btn">
-            Email ME
-          </Link>
+          <Socials />
         </div>
       </header>
 

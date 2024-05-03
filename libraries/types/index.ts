@@ -13,14 +13,6 @@ export type Education = {
   sublabel: string;
   type: "degree" | "award";
 };
-export type Work = {
-  company: string;
-  year: string;
-  months: string;
-  type: "full-time" | "part-time" | "internship" | "contractual" | "freelance";
-  isCurrent: boolean;
-  link: string;
-};
 export type TechStack = {
   label: string;
   src: string;

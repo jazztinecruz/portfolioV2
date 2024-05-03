@@ -4,7 +4,6 @@ import type {
   Project,
   Social,
   TechStack,
-  Work,
 } from "@/libraries/types";
 
 export const menus: MenuItem[] = [
@@ -39,7 +38,7 @@ export const education: Education[] = [
     type: "award",
   },
   {
-    label: "Academic Deans Lister",
+    label: "College Deans Lister",
     sublabel: "Philippine Christian University",
     type: "award",
   },
@@ -47,49 +46,6 @@ export const education: Education[] = [
     label: "Best Thesis Software Application Project",
     sublabel: "Codery - A Web-based Platform for Freelancers",
     type: "award",
-  },
-];
-
-export const works: Work[] = [
-  {
-    company: "HireTalk Inc.",
-    year: "Jan 2023 - Present",
-    months: "1 yr and 4 mos",
-    type: "full-time",
-    link: "https://hiretalk.ai",
-    isCurrent: true,
-  },
-  {
-    company: "Freelance",
-    year: "Oct 2021 - Present",
-    months: "2 yrs and 7 mos",
-    type: "freelance",
-    link: "https://github.com/jazztinecruz",
-    isCurrent: true,
-  },
-  {
-    company: "Ghaleb Alaskari General Trading LLC",
-    year: "July 2023 - July 2023 ",
-    months: "1 mo",
-    type: "contractual",
-    link: "https://ghalebgt.com",
-    isCurrent: false,
-  },
-  {
-    company: "Checkpoint Labs",
-    year: "Apr 2023 - Nov 2023",
-    months: "6 mos",
-    type: "part-time",
-    isCurrent: false,
-    link: "https://www.linkedin.com/company/checkpointlabs",
-  },
-  {
-    company: "HireTalk Inc.",
-    year: "Oct 2022 - Jan 2023",
-    months: "4 mos",
-    type: "internship",
-    link: "https://hiretalk.ai",
-    isCurrent: false,
   },
 ];
 

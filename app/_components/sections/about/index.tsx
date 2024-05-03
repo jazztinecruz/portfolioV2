@@ -1,7 +1,6 @@
 import { SectionTitle } from "../../titles";
 import Character from "./character";
 import EducationalBackground from "./educational";
-import WorkExperience from "./work";
 
 const About = () => {
   return (
@@ -19,7 +18,6 @@ const About = () => {
 
       <div className="space-y-20">
         <Character />
-        <WorkExperience />
         <EducationalBackground />
       </div>
     </section>
