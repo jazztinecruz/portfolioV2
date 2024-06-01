@@ -77,10 +77,11 @@ export const socials: Social[] = [
 export const projects: Project = {
   development: [
     {
-      title: "AI-Driven Design Challenge",
+      title: "Netflix Clone",
       description:
-        "A web platform where you can enhance your design skills as you take on the AI-Driven Design Challenge and get inspirations from the other designs.",
-      github: "https://github.com/jazztinecruz/ai-driven-design-challenge",
+        "A fully typed Responsive Netflix Clone that I made with the use of ReactJS, Next JS App Dir, Typescript and Tailwind CSS.",
+      github: "https://github.com/jazztinecruz/netflix.git",
+      url: "https://netflix-seven-eta.vercel.app",
     },
     {
       title: "Clode",
@@ -88,6 +89,14 @@ export const projects: Project = {
         "A web platform where you can Store, Share, and Manage Code Snippets empowering developers with enhanced collaboration and productivity tools.",
       url: "",
       github: "https://github.com/nikkoabucejo/clode",
+      ongoing: true,
+    },
+    {
+      title: "AI-Driven Design Challenges",
+      description:
+        "A web platform where you can enhance your design skills as you take on the AI-Driven Design Challenge and get inspirations from the other designs.",
+      github: "https://github.com/jazztinecruz/ai-driven-design-challenge",
+      ongoing: true,
     },
     {
       title: "Codery",

@@ -22,6 +22,7 @@ export type Development = {
   description: string;
   url?: string;
   github: string;
+  ongoing?: boolean;
 };
 export type Design = {
   title: string;

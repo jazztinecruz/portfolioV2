@@ -34,6 +34,11 @@ const Projects = () => {
                 </div>
                 <p className="text-sm tertiary">{code.description}</p>
                 <Github url={code.github} hasArrow />
+                {code.ongoing && (
+                  <div className="bg-green-700/30 rounded px-3 py-1 w-fit text-xs text-green-700 font-semibold -mt-2">
+                    In Development
+                  </div>
+                )}
               </div>
             </div>
           ))}
