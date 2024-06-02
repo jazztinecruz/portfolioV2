@@ -62,6 +62,7 @@ const ShowcaseCard = ({ data, type = "development" }: Props) => {
               alt={data.title}
               fill
               className="w-full h-full rounded-t-md"
+              priority
             />
           </Link>
         ) : (
