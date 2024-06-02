@@ -1,6 +1,6 @@
 "use client";
 
-import type { Children, Theme } from "@/libraries/types";
+import type { Children, Theme } from "@/core/types";
 import { createContext, useContext, useEffect, useState } from "react";
 
 const ThemeContext = createContext<{

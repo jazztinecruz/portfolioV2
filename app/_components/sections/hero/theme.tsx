@@ -1,6 +1,6 @@
 "use client";
 
-import { useTheme } from "@/libraries/contexts/use-theme";
+import { useTheme } from "@/core/contexts/use-theme";
 import { SunIcon, MoonIcon } from "@heroicons/react/24/solid";
 
 const ThemeSwitcher = () => {

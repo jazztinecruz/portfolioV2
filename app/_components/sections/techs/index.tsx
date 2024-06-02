@@ -1,4 +1,4 @@
-import { technologies } from "@/libraries/constants/data";
+import { technologies } from "@/core/constants/data";
 import { SectionTitle } from "../../titles";
 import Image from "next/image";
 

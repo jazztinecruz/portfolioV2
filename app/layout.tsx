@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import type { Children } from "@/libraries/types";
+import type { Children } from "@/core/types";
 import { Inter } from "next/font/google";
-import "@/styles/globals.css";
-import ThemeProvider from "@/libraries/contexts/use-theme";
+import "@/core/styles/globals.css";
+import ThemeProvider from "@/core/contexts/use-theme";
 
 const inter = Inter({ subsets: ["latin"] });
 

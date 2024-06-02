@@ -82,7 +82,11 @@ export const projects: Project = {
         "A fully typed Responsive Netflix Clone that I made with the use of ReactJS, Next JS App Dir, Typescript and Tailwind CSS.",
       github: "https://github.com/jazztinecruz/netflix.git",
       preview: "https://netflix-seven-eta.vercel.app",
-      previewSet: [],
+      previewSet: [
+        "/development/netflix/home.png",
+        "/development/netflix/collection.png",
+        "/development/netflix/modal.png",
+      ],
     },
     {
       title: "Clode",

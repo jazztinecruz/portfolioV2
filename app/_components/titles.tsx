@@ -1,4 +1,4 @@
-import type { Children } from "@/libraries/types";
+import type { Children } from "@/core/types";
 
 type Props = {
   children: Children;

@@ -1,11 +1,13 @@
 "use client";
 
-import { Design, Development } from "@/libraries/types";
+import { Design, Development } from "@/core/types";
 import {
   ArrowUpRightIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
+  NoSymbolIcon,
 } from "@heroicons/react/24/solid";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -17,7 +19,7 @@ type Props = {
 const ShowcaseCard = ({ data, type = "development" }: Props) => {
   const [currentDisplayIndex, setCurrentDisplayIndex] = useState<number>(0);
 
-  const photos: number[] = Array.from({ length: 5 }, (_, index) => index + 1);
+  const photos = data.previewSet || [];
 
   const handleNext = () => {
     if (currentDisplayIndex < photos.length - 1) {
@@ -50,26 +52,55 @@ const ShowcaseCard = ({ data, type = "development" }: Props) => {
   };
 
   return (
-    <div className="flex flex-col rounded-md">
+    <div className="grid grid-rows-2 rounded-md">
       {/* carousel */}
-      <div className="relative aspect-video w-full h-full bg-gray-500 rounded-t-md">
-        <button
-          onClick={handlePrev}
-          className="absolute left-2 top-2/4 -translate-y-2/4 bg-opacity rounded p-1">
-          <ChevronLeftIcon className="w-5 h-5" />
-        </button>
-        <div>{photos[currentDisplayIndex]}</div>
-        <button
-          onClick={handleNext}
-          className="absolute right-2 top-2/4 -translate-y-2/4 bg-opacity rounded p-1">
-          <ChevronRightIcon className="w-5 h-5" />
-        </button>
+      <div className="relative aspect-video w-full h-full bg-gray-500/50 rounded-t-md">
+        {photos[currentDisplayIndex] ? (
+          <Link href={photos[currentDisplayIndex]} target="_blank">
+            <Image
+              src={photos[currentDisplayIndex]}
+              alt={data.title}
+              fill
+              className="w-full h-full rounded-t-md"
+            />
+          </Link>
+        ) : (
+          <div className="flex items-center flex-wrap gap-1 text-white/50 h-full justify-center">
+            <NoSymbolIcon className="w-5 h-5" />
+            <span>Photo Not Available</span>
+          </div>
+        )}
+
+        {photos.length > 1 && (
+          <>
+            <button
+              onClick={handlePrev}
+              className="absolute left-2 top-2/4 -translate-y-2/4 bg-white/30 rounded p-1 z-10">
+              <ChevronLeftIcon className="w-5 h-5" />
+            </button>
+            <button
+              onClick={handleNext}
+              className="absolute right-2 top-2/4 -translate-y-2/4 bg-white/30 rounded p-1">
+              <ChevronRightIcon className="w-5 h-5" />
+            </button>
+          </>
+        )}
+
+        <div className="flex items-center gap-1 absolute bottom-2 left-2/4 -translate-x-2/4">
+          {photos.map((_, index) => (
+            <div
+              className={`w-2 h-2 rounded-full z-10 ${
+                index === currentDisplayIndex ? "bg-white" : "bg-opacity"
+              }`}
+            />
+          ))}
+        </div>
       </div>
       {/* details */}
-      <div className="bg-opacity p-4 space-y-2 rounded-b-md grid">
+      <div className="bg-opacity p-4 space-y-3 rounded-b-md">
         <h3 className="font-semibold">{data.title}</h3>
-        <p className="text-sm tertiary mb-4">{data.description}</p>
-        {previews()}
+        <p className="text-sm tertiary mb-auto">{data.description}</p>
+        <div>{previews()}</div>
       </div>
     </div>
   );

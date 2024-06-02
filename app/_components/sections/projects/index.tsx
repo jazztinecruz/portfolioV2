@@ -1,4 +1,4 @@
-import { projects } from "@/libraries/constants/data";
+import { projects } from "@/core/constants/data";
 import { SectionTitle } from "../../titles";
 import ShowcaseCard from "./card";
 

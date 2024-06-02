@@ -1,4 +1,4 @@
-import { charateristics } from "@/libraries/constants/data";
+import { charateristics } from "@/core/constants/data";
 import { Title } from "../../titles";
 
 const Character = () => {

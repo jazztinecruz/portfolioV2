@@ -1,5 +1,5 @@
 import { Title } from "../../titles";
-import { education } from "@/libraries/constants/data";
+import { education } from "@/core/constants/data";
 import { AcademicCapIcon, StarIcon } from "@heroicons/react/24/solid";
 
 const EducationalBackground = () => {

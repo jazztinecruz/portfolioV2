@@ -1,4 +1,4 @@
-import type { Page } from "@/libraries/types";
+import type { Page } from "@/core/types";
 import Navbar from "./navbar";
 import ThemeSwitcher from "./theme";
 import { Roboto_Mono, Satisfy } from "next/font/google";

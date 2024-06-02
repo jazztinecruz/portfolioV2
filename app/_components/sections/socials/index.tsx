@@ -1,4 +1,4 @@
-import { socials } from "@/libraries/constants/data";
+import { socials } from "@/core/constants/data";
 import Image from "next/image";
 import Link from "next/link";
 import Github from "../../github";

@@ -1,6 +1,6 @@
 "use client";
 
-import { useTheme } from "@/libraries/contexts/use-theme";
+import { useTheme } from "@/core/contexts/use-theme";
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
