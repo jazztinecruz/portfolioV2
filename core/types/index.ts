@@ -17,22 +17,23 @@ export type TechStack = {
   label: string;
   src: string;
 };
+export type Social = {
+  link: string;
+  src: string;
+};
 export type Development = {
   title: string;
   description: string;
-  url?: string;
   github: string;
+  preview?: string;
+  previewSet: string[];
   ongoing?: boolean;
 };
 export type Design = {
   title: string;
   description: string;
-  thumbnail: string;
-  pdf: string;
-};
-export type Social = {
-  link: string;
-  src: string;
+  preview: string;
+  previewSet: string[];
 };
 export type Project = {
   development: Development[];

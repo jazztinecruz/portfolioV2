@@ -4,7 +4,7 @@ import type {
   Project,
   Social,
   TechStack,
-} from "@/libraries/types";
+} from "@/core/types";
 
 export const menus: MenuItem[] = [
   { label: "Home", id: "#home" },
@@ -81,15 +81,17 @@ export const projects: Project = {
       description:
         "A fully typed Responsive Netflix Clone that I made with the use of ReactJS, Next JS App Dir, Typescript and Tailwind CSS.",
       github: "https://github.com/jazztinecruz/netflix.git",
-      url: "https://netflix-seven-eta.vercel.app",
+      preview: "https://netflix-seven-eta.vercel.app",
+      previewSet: [],
     },
     {
       title: "Clode",
       description:
         "A web platform where you can Store, Share, and Manage Code Snippets empowering developers with enhanced collaboration and productivity tools.",
-      url: "",
+      preview: "",
       github: "https://github.com/nikkoabucejo/clode",
       ongoing: true,
+      previewSet: [],
     },
     {
       title: "AI-Driven Design Challenges",
@@ -97,12 +99,14 @@ export const projects: Project = {
         "A web platform where you can enhance your design skills as you take on the AI-Driven Design Challenge and get inspirations from the other designs.",
       github: "https://github.com/jazztinecruz/ai-driven-design-challenge",
       ongoing: true,
+      previewSet: [],
     },
     {
       title: "Codery",
       description:
         "A web platform for Software Engineer Freelancers. Designed to streamline the freelancer-client matchmaking process with professionalism and efficiency.",
       github: "https://github.com/jazztinecruz/codery",
+      previewSet: [],
     },
   ],
   design: [
@@ -110,22 +114,22 @@ export const projects: Project = {
       title: "AI-Driven Image Generator",
       description:
         "A website design that generates AI-driven images for you. It uses AI to generate images based on the user's input.",
-      thumbnail: "/thumbnails/ai-image-thumbnail.png",
-      pdf: "/designs/ai-image.pdf",
+      preview: "/designs/ai-image.pdf",
+      previewSet: [],
     },
     {
       title: "Crafter",
       description:
         "An e-commerce web design that showcases the products of the Craft store. The design focuses on the uniqueness of each product.",
-      thumbnail: "/thumbnails/crafter-thumbnail.png",
-      pdf: "/designs/crafter.pdf",
+      preview: "/designs/crafter.pdf",
+      previewSet: [],
     },
     {
       title: "Signup",
       description:
         "A signup page facilitating user registration through third-party authentication or traditional email-password scheme.",
-      thumbnail: "/thumbnails/signup-thumbnail.png",
-      pdf: "/designs/signup.pdf",
+      preview: "/designs/signup.pdf",
+      previewSet: [],
     },
   ],
 };

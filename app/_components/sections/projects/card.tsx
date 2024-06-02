@@ -36,7 +36,7 @@ const ShowcaseCard = ({ data, type = "development" }: Props) => {
         const code = data as Development;
         return (
           <div className="flex flex-wrap items-end gap-2">
-            {code.url && <Badge label="Preview" url={code.url} />}
+            {code.preview && <Badge label="Preview" url={code.preview} />}
             <Badge label="Github" url={code.github} />
             {code.ongoing && <Badge label="In Development" />}
           </div>
@@ -44,7 +44,7 @@ const ShowcaseCard = ({ data, type = "development" }: Props) => {
       }
       case "design": {
         const design = data as Design;
-        return <Badge label="Preview" url={design.pdf} />;
+        return <Badge label="Preview" url={design.preview} />;
       }
     }
   };
