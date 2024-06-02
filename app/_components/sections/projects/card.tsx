@@ -89,6 +89,7 @@ const ShowcaseCard = ({ data, type = "development" }: Props) => {
         <div className="flex items-center gap-1 absolute bottom-2 left-2/4 -translate-x-2/4">
           {photos.map((_, index) => (
             <div
+              key={index}
               className={`w-2 h-2 rounded-full z-10 ${
                 index === currentDisplayIndex ? "bg-white" : "bg-opacity"
               }`}
