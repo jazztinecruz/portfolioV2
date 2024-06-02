@@ -52,7 +52,7 @@ const ShowcaseCard = ({ data, type = "development" }: Props) => {
   };
 
   return (
-    <div className="grid grid-rows-2 rounded-md">
+    <div className="flex flex-col rounded-md">
       {/* carousel */}
       <div className="relative aspect-video w-full h-full bg-gray-500/50 rounded-t-md">
         {photos[currentDisplayIndex] ? (
