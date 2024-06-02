@@ -97,6 +97,7 @@ const ShowcaseCard = ({ data, type = "development" }: Props) => {
           ))}
         </div>
       </div>
+
       {/* details */}
       <div className="bg-opacity p-4 space-y-3 rounded-b-md">
         <h3 className="font-semibold">{data.title}</h3>
