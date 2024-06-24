@@ -9,7 +9,7 @@ import {
 } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type Props = {
   data: Design | Development;
@@ -32,6 +32,8 @@ const ShowcaseCard = ({ data, type = "development" }: Props) => {
     else setCurrentDisplayIndex((prev) => prev - 1);
   };
 
+  console.log(currentDisplayIndex);
+
   const previews = () => {
     switch (type) {
       case "development": {
@@ -51,12 +53,17 @@ const ShowcaseCard = ({ data, type = "development" }: Props) => {
     }
   };
 
+  useEffect(() => {}, [handleNext, handlePrev]);
+
   return (
     <div className="flex flex-col rounded-md">
       {/* carousel */}
       <div className="relative aspect-video w-full h-full bg-gray-500/50 rounded-t-md">
         {photos[currentDisplayIndex] ? (
-          <Link href={photos[currentDisplayIndex]} target="_blank">
+          <Link
+            key={currentDisplayIndex}
+            href={photos[currentDisplayIndex]}
+            target="_blank">
             <Image
               src={photos[currentDisplayIndex]}
               alt={data.title}
