@@ -10,9 +10,9 @@ const HomePage: Page = () => {
   return (
     <div className="space-y-20 lg:space-y-32">
       <Hero />
-      <About />
       <Technologies />
       <Projects />
+      <About />
       <Socials withHeader />
     </div>
   );

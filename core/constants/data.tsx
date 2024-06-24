@@ -132,12 +132,5 @@ export const projects: Project = {
       preview: "/designs/crafter/crafter.pdf",
       previewSet: ["/designs/crafter/home.png", "/designs/crafter/item.png"],
     },
-    {
-      title: "Signup",
-      description:
-        "A signup page facilitating user registration through third-party authentication or traditional email-password scheme.",
-      preview: "/designs/signup/signup.pdf",
-      previewSet: ["/designs/signup/signup.png"],
-    },
   ],
 };
