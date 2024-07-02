@@ -125,12 +125,5 @@ export const projects: Project = {
         "/designs/ai/settings.png",
       ],
     },
-    {
-      title: "Crafter",
-      description:
-        "An e-commerce web design that showcases the products of the Craft store. The design focuses on the uniqueness of each product.",
-      preview: "/designs/crafter/crafter.pdf",
-      previewSet: ["/designs/crafter/home.png", "/designs/crafter/item.png"],
-    },
   ],
 };
