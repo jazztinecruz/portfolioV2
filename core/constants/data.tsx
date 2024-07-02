@@ -4,6 +4,7 @@ import type {
   Project,
   Social,
   TechStack,
+  Work,
 } from "@/core/types";
 
 export const menus: MenuItem[] = [
@@ -127,3 +128,41 @@ export const projects: Project = {
     },
   ],
 };
+
+export const works: Work[] = [
+  {
+    company: "HireTalk Inc.",
+    year: "Jan 2023 - Present",
+    duration: "1 yr and 7 mos",
+    type: "full-time",
+    isCurrent: true,
+  },
+  {
+    company: "Software Engineer Freelancer",
+    year: "Oct 2021 - Present",
+    duration: "2 yrs and 10 mos",
+    type: "freelance",
+    isCurrent: true,
+  },
+  {
+    company: "Ghaleb Alaskari General Trading LLC",
+    year: "July 2023 - July 2023 ",
+    duration: "1 mo",
+    type: "contractual",
+    isCurrent: false,
+  },
+  {
+    company: "Checkpoint Labs",
+    year: "Apr 2023 - Nov 2023",
+    duration: "6 mos",
+    type: "part-time",
+    isCurrent: false,
+  },
+  {
+    company: "HireTalk Inc.",
+    year: "Oct 2022 - Jan 2023",
+    duration: "4 mos",
+    type: "internship",
+    isCurrent: false,
+  },
+];

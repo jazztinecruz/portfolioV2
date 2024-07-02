@@ -39,3 +39,10 @@ export type Project = {
   development: Development[];
   design: Design[];
 };
+export type Work = {
+  company: string;
+  year: string;
+  duration: string;
+  type: "full-time" | "part-time" | "internship" | "contractual" | "freelance";
+  isCurrent: boolean;
+};
