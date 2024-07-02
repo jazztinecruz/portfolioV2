@@ -32,8 +32,6 @@ const ShowcaseCard = ({ data, type = "development" }: Props) => {
     else setCurrentDisplayIndex((prev) => prev - 1);
   };
 
-  console.log(currentDisplayIndex);
-
   const previews = () => {
     switch (type) {
       case "development": {
@@ -62,7 +60,11 @@ const ShowcaseCard = ({ data, type = "development" }: Props) => {
         {photos[currentDisplayIndex] ? (
           <Link
             key={currentDisplayIndex}
-            href={photos[currentDisplayIndex]}
+            href={
+              type === "development"
+                ? data.preview!
+                : photos[currentDisplayIndex]
+            }
             target="_blank">
             <Image
               src={photos[currentDisplayIndex]}
