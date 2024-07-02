@@ -41,6 +41,7 @@ export type Project = {
 };
 export type Work = {
   company: string;
+  location?: string
   year: string;
   duration: string;
   type: "full-time" | "part-time" | "internship" | "contractual" | "freelance";

@@ -132,6 +132,7 @@ export const projects: Project = {
 export const works: Work[] = [
   {
     company: "HireTalk Inc.",
+    location: "United States",
     year: "Jan 2023 - Present",
     duration: "1 yr and 7 mos",
     type: "full-time",
@@ -146,6 +147,7 @@ export const works: Work[] = [
   },
   {
     company: "Ghaleb Alaskari General Trading LLC",
+    location: "United Arab Emirates",
     year: "July 2023 - July 2023 ",
     duration: "1 mo",
     type: "contractual",
@@ -153,6 +155,7 @@ export const works: Work[] = [
   },
   {
     company: "Checkpoint Labs",
+    location: "Metro Manila",
     year: "Apr 2023 - Nov 2023",
     duration: "6 mos",
     type: "part-time",
@@ -160,6 +163,7 @@ export const works: Work[] = [
   },
   {
     company: "HireTalk Inc.",
+    location: "United States",
     year: "Oct 2022 - Jan 2023",
     duration: "4 mos",
     type: "internship",
