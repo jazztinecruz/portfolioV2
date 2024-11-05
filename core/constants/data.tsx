@@ -90,6 +90,14 @@ export const projects: Project = {
       ],
     },
     {
+      title: "E-Commerce Platform",
+      description:
+        "A fully typed responsive Fullstack E-commerce app that is made with ReactJS, Next JS, Typescript, Tailwind CSS and Prisma ORM, postgresql.",
+      github:
+        "https://github.com/jazztinecruz/e-commerce-using-prisma-postgresql-and-nextjs",
+      previewSet: [],
+    },
+    {
       title: "Clode",
       description:
         "A web platform where you can Store, Share, and Manage Code Snippets empowering developers with enhanced collaboration and productivity tools.",
@@ -131,19 +139,19 @@ export const projects: Project = {
 
 export const works: Work[] = [
   {
-    company: "HireTalk Inc.",
-    location: "United States",
-    year: "Jan 2023 - Present",
-    duration: "1 yr and 7 mos",
-    type: "full-time",
-    isCurrent: true,
-  },
-  {
-    company: "Software Engineer Freelancer",
+    company: "Software Engineer Freelancer & UI/UX Designer Freelancer",
     year: "Oct 2021 - Present",
     duration: "2 yrs and 10 mos",
     type: "freelance",
     isCurrent: true,
+  },
+  {
+    company: "HireTalk Inc.",
+    location: "United States",
+    year: "Jan 2023 - Aug 2024",
+    duration: "1 yr and 10 mos",
+    type: "full-time",
+    isCurrent: false,
   },
   {
     company: "Ghaleb Alaskari General Trading LLC",
